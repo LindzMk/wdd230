@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lindiwe Mokoena - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development | Lindiwe Mokoena | Course Assignment portal">
-    <meta name=" author" content="Lindiwe Mokoena">
+    <meta name="author" content="Lindiwe Mokoena">
     <!--social Media tags-->
-    <meta property="og:title" content="WDD 230 - Web Frontend Development " />
+    <meta property="og:title" content="WDD 230 - Web Frontend Development" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lindzmk.github.io/wdd230/" />
     <meta property="og:image"
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
 
     <!--link for fav icon-->
     <link rel="icon" href="favicon_io/favicon.ico">
@@ -28,17 +29,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Permanent+Marker&display=swap"
         rel="stylesheet">
-
-
-
 </head>
 
 <body>
     <header>
-        <img src=" images/profile.jpg" alt="Lindiwe Mokoena Profile" width="75" height="100">
+        <img src="images/profile.jpg" alt="Lindiwe Mokoena Profile" width="75" height="100">
         <h1>Lindiwe Mokoena</h1>
+        <button id="hamburger" aria-label="Toggle menu">&#9776;</button>
     </header>
-    <nav>
+    <nav id="navMenu">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="chamber.html">Chamber</a></li>
@@ -53,16 +52,15 @@
             <section class="card learning-activities">
                 <h2>Learning Activities</h2>
                 <ul>
-                    <li>Week 01: <a href="week01/holygrail.html">Holy Layout | <a href="week01/media-query.html">Media
-                                Query</a></li>
-                    <li>Week 02: <a href="week02/design.html">Design Principles| <a
-                                href="https://codepen.io/CollettaM/pen/KKLZgpP">Responsive Hamburger Menu | <a
-                                    href="week02/bom.html">Dom Manipulation</a>
-                    </li>
+                    <li>Week 01: <a href="week01/holygrail.html">Holy Layout</a> | <a
+                            href="week01/media-query.html">Media Query</a></li>
+                    <li>Week 02: <a href="week02/design.html">Design Principles</a> | <a
+                            href="https://codepen.io/CollettaM/pen/KKLZgpP">Responsive Hamburger Menu</a> | <a
+                            href="week02/bom.html">Dom Manipulation</a></li>
                     <li><a href="activity3.html">Week 03</a></li>
                     <li><a href="activity4.html">Week 04</a></li>
                     <li><a href="activity5.html">Week 05</a></li>
-                    <li><a href="activity7.html">Week 06</a></li>
+                    <li><a href="activity6.html">Week 06</a></li>
                     <li><a href="activity7.html">Week 07</a></li>
                 </ul>
             </section>
@@ -75,7 +73,6 @@
         </section>
     </main>
 
-
     <footer>
         <p>&copy; <span id="year"></span> Lindiwe C. Mokoena | South Africa</p>
         <p id="lastModified"></p>
@@ -83,6 +80,7 @@
 
     <!-- Link to the JavaScript file -->
     <script src="scripts/getDates.js"></script>
+
 </body>
 
 </html>

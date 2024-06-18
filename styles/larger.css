@@ -21,7 +21,23 @@
         margin: 20px auto;
     }
 
+    #hamburger {
+        display: none;
+        /* Hide hamburger button on larger screens */
+    }
 
+    #navMenu {
+        display: flex;
+        /* Show menu on larger screens */
+        flex-direction: row;
+        /* Ensure menu items are in a row */
+        justify-content: center;
+    }
 
-
+    nav ul {
+        flex-direction: row;
+        /* Ensure menu items are in a row */
+        gap: 20px;
+        /* Add space between menu items */
+    }
 }
