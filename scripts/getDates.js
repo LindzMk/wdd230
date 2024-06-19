@@ -18,5 +18,18 @@ document.addEventListener('DOMContentLoaded', function () {
             navMenu.classList.add('show');
             hamburger.innerHTML = '&times;'; // 'X' icon
         }
-    });
+    })
+})
+
+const modeButton = document.querySelector("#mode");
+const body = document.body;
+
+modeButton.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    if (body.classList.contains("dark-mode")) {
+        modeButton.textContent = "🔆";
+    } else {
+        modeButton.textContent = "🕶️";
+    }
 });

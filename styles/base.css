@@ -1,3 +1,12 @@
+/* Define CSS variables for light and dark modes */
+:root {
+    --bg-color-light: #f4f4f4;
+    --text-color-light: #000000;
+    --bg-color-dark: #000000;
+    --text-color-dark: #ffffff;
+}
+
+
 /* Base Styles */
 body {
     font-family: 'Roboto', sans-serif;
@@ -5,6 +14,10 @@ body {
     padding: 10px;
     background-color: #f4f4f4;
     max-width: 1000px;
+    background-color: var(--bg-color-light);
+    /* Light mode background color */
+    color: var(--text-color-light);
+    /* Light mode text color */
 
 }
 
@@ -18,10 +31,13 @@ header {
     position: relative;
 }
 
+
 header img {
     display: block;
     margin: 0 auto;
+
 }
+
 
 #hamburger {
     font-size: 30px;
@@ -30,7 +46,7 @@ header img {
     color: #fff;
     cursor: pointer;
     position: absolute;
-    top: 15px;
+    bottom: 15px;
     right: 20px;
     display: none;
     /* Hidden by default */
@@ -38,7 +54,7 @@ header img {
 
 /* Navigation */
 nav {
-    background-color: #000000;
+    background-color: #000000
 }
 
 nav ul {
@@ -76,12 +92,16 @@ nav a:hover {
 /* Main Content */
 main {
     margin: 20px;
+    padding: 20px;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
 }
 
 main h1 {
     border-bottom: 2px solid #1ba0ec;
     padding-bottom: 5px;
 }
+
 
 /* Grid Container */
 .grid-container {
@@ -123,4 +143,58 @@ footer p {
 ul {
     list-style-type: none;
     padding: 0;
+}
+
+/*Dark Mode Styles*/
+body.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-mode main {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.dark-mode header {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark-mode nav {
+    background-color: #222;
+}
+
+body.dark-mode nav a {
+    color: #fff;
+}
+
+body.dark-mode nav a:hover {
+    color: #000;
+    background-color: #ed7f19;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark-mode .card ul {
+    color: #000000;
+}
+
+body.dark-mode .card p {
+    color: #000000;
+}
+
+/* Mode Button */
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
 }

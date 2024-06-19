@@ -8,11 +8,11 @@
     <meta name="description" content="WDD 230 - Web Frontend Development | Lindiwe Mokoena | Course Assignment portal">
     <meta name="author" content="Lindiwe Mokoena">
     <!--social Media tags-->
-    <meta property="og:title" content="WDD 230 - Web Frontend Development" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lindzmk.github.io/wdd230/" />
+    <meta property="og:title" content="WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lindzmk.github.io/wdd230/">
     <meta property="og:image"
-        content="https://raw.githubusercontent.com/LindzMk/wdd230/main/images/boksburg.union.webp" />
+        content="https://raw.githubusercontent.com/LindzMk/wdd230/main/images/boksburg.union.webp">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,9 @@
     <header>
         <img src="images/profile.jpg" alt="Lindiwe Mokoena Profile" width="75" height="100">
         <h1>Lindiwe Mokoena</h1>
-        <button id="hamburger" aria-label="Toggle menu">&#9776;</button>
+        <button id="hamburger" aria-label="Toggle menu">&#9776;</button> <!-- Hamburger menu button for mobile view -->
+        <button id="mode" aria-label="Toggle dark mode">🕶️</button> <!-- Dark mode button -->
+
     </header>
     <nav id="navMenu">
         <ul>
@@ -49,7 +51,7 @@
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="grid-container">
-            <section class="card learning-activities">
+            <div class="card learning-activities">
                 <h2>Learning Activities</h2>
                 <ul>
                     <li>Week 01: <a href="week01/holygrail.html">Holy Layout</a> | <a
@@ -63,13 +65,13 @@
                     <li><a href="activity6.html">Week 06</a></li>
                     <li><a href="activity7.html">Week 07</a></li>
                 </ul>
-            </section>
+            </div>
 
-            <section class="card information">
+            <div class="card information">
                 <h2>Information</h2>
                 <p>Weather: <span id="weather">Placeholder for weather information</span></p>
                 <p>Number of visits: <span id="visits">Placeholder for visit count</span></p>
-            </section>
+            </div>
         </section>
     </main>
 
