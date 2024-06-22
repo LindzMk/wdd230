@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boksburg Chamber of Commerce</title>
+    <meta name="description" content="Boksburg Chamber of Commerce | Home Page | WDD 230 Web Frontend Development">
+    <meta name="author" content="Lindiwe Mokoena">
+
+    <!-- Social Media Tags -->
+    <meta property="og:title" content="WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="This is the home page for the Chamber project.">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:image" content="https://example.com/images/boksburg.union.webp">
+    <meta property="og:site_name" content="Boksburg Chamber of Commerce">
+
+    <!-- Link to CSS Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <!-- Link for Favicon -->
+    <link rel="icon" href="favicon_io/favicon.ico">
+
+    <!-- Font Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.webp" alt="logo">
+        <h1>Boksburg Chamber of Commerce</h1>
+        <button id="hamburger" aria-label="Toggle menu">&#9776;</button> <!-- Hamburger menu button for mobile view -->
+        <button id="mode" aria-label="Toggle dark mode">🕶️</button> <!-- Dark mode button -->
+    </header>
+    <nav id="navMenu">
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </nav>
+    <div class="hero-box">
+        <img id="hero-img" src="images/hero_image3.jpg" alt="hero image">
+        <button class="call-to-action">Join Us</button>
+    </div>
+    <main>
+        <section class="events">
+            <h3>Events</h3>
+            <img class="event" src="images/event1.webp" alt="events">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+            </p>
+        </section>
+        <section class="weather">
+            <h3>Weather</h3>
+            <img class="weather" src="images/weather1.webp" alt="weather">
+            <p>
+                Temperature: <span id="temperature">25</span> °F
+                <br>
+                <span id="wind-chill">Windchill: N/A</span>
+            </p>
+        </section>
+        <section class="companies1">
+            <h2>Member Spotlights</h2>
+            <h3>Need Repairs</h3>
+            <img class="repair" src="images/tools.webp" alt="repair">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit.
+            </p>
+        </section>
+        <section class="companies2">
+            <h3>Need Transport</h3>
+            <img class="transport" src="images/transport1.webp" alt="trasnport">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit.
+            </p>
+        </section>
+        <section class="companies3">
+            <h3>Love Art</h3>
+            <img class="art" src="images/artlove.webp" alt="art">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <img class="footer-logo" src="images/logo.webp" alt="logo-footer">
+        <div class="info-footer">
+            <p>Boksburg Chamber of Commerce</p>
+            <p>5 Bulter street, Boksburg 1459, South Africa</p>
+        </div>
+        <div class="contact-footer">
+            <p>Email: contact@boksburgchamber.co.za</p>
+            <p>Phone: +27 11 625 7890</p>
+        </div>
+        <hr>
+        <hr>
+        <div class="info-author">
+            <p>&copy; <span id="yearDate"></span> Boksburg Chamber | Lindiwe C. Mokoena | WDD 230 Project | Last
+                Updated: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/getdate.js"></script>
+</body>
+
+</html>

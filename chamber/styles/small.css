@@ -1,0 +1,24 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #hamburger {
+        display: block;
+        /* Show hamburger button on small screens */
+    }
+
+    #navMenu {
+        display: none;
+        /* Hide menu on small screens */
+    }
+
+    #navMenu.show {
+        display: flex;
+        /* Show menu when toggled */
+        flex-direction: column;
+        /* Ensure menu items stack vertically */
+    }
+
+    nav ul {
+        flex-direction: column;
+        /* Ensure menu items stack vertically */
+    }
+}
