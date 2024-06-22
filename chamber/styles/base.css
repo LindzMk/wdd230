@@ -136,12 +136,12 @@ main {
 
 footer {
     display: grid;
-    padding: 40px;
+    top: 10px;
     background-color: #0f6394;
     color: #ffffff;
     grid-template-columns: 1fr;
     text-align: center;
-    margin-top: 40px;
+    padding: 10px 20px;
 }
 
 footer img {
@@ -150,11 +150,7 @@ footer img {
     border-radius: 10px;
 }
 
-.info-footer,
-.contact-footer,
-.info-author {
-    padding: 10px;
-}
+
 
 hr {
     width: 100%;
