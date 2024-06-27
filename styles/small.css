@@ -1,5 +1,6 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
+
     #hamburger {
         display: block;
         /* Show hamburger button on small screens */
@@ -20,5 +21,12 @@
     nav ul {
         flex-direction: column;
         /* Ensure menu items stack vertically */
+    }
+
+    .herolabel {
+        top: 10px;
+        left: 10px;
+        max-width: calc(100% - 20px);
+        padding: 1rem;
     }
 }

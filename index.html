@@ -33,22 +33,32 @@
 
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Lindiwe Mokoena Profile" width="75" height="100">
+        <img src="images/profile(1).webp" alt="Lindiwe Mokoena Profile" width="75" height="100">
         <h1>Lindiwe Mokoena</h1>
         <button id="hamburger" aria-label="Toggle menu">&#9776;</button> <!-- Hamburger menu button for mobile view -->
         <button id="mode" aria-label="Toggle dark mode">🕶️</button> <!-- Dark mode button -->
-
     </header>
     <nav id="navMenu">
         <ul>
             <a href="index.html">Home</a>
-            <a href="chamber/">Chamber</a>
+            <a href="chamber">Chamber</a>
             <a href="chamber-site-plan.html">Site Plan</a>
             <a href="form.html">Form</a>
         </ul>
     </nav>
-
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="week03/images/temple-small.webp"> <!-- Mobile image -->
+                <img src="week03/images/temple-large.webp" alt=" johannesburg Temple">
+                <!-- Larger screens up to 960px in width -->
+            </picture>
+
+            <div class="herolabel">
+                <p>Johannesburg South Africa Temple</p>
+            </div>
+        </div>
+
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="grid-container">
             <div class="card learning-activities">
@@ -56,12 +66,13 @@
                 <ul>
                     <li>Week 01: <a href="week01/holygrail.html">Holy Layout</a> | <a
                             href="week01/media-query.html">Media Query</a></li>
-                    <li>Week 02: <a href="week02/design.html">Design Principles</a> | <a
-                            href="https://codepen.io/CollettaM/pen/KKLZgpP">Responsive Hamburger Menu</a> | <a
-                            href="week02/bom.html">Dom Manipulation</a></li>
-                    <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy
-                            Load Assignment</a> | <a href="week03/responsive-images.html">Responsive Image
-                            Assignment</a></li>
+                    <li>Week 02: <a href="week02/design.html">Design</a> | <a
+                            href="https://codepen.io/CollettaM/pen/KKLZgpP">Menu</a> | <a
+                            href="week02/bom.html">BOM-25</a></li>
+                    <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a
+                            href="week03/lazyload.html">Lazy</a> | <a href="week03/responsive-images.html">srcset</a> |
+                        <a href="week03/bom.html">localStorage</a>
+                    </li>
                     <li><a href="activity4.html">Week 04</a></li>
                     <li><a href="activity5.html">Week 05</a></li>
                     <li><a href="activity6.html">Week 06</a></li>
@@ -71,10 +82,18 @@
 
             <div class="card information">
                 <h2>Information</h2>
-                <p>Weather: <span id="weather">Placeholder for weather information</span></p>
-                <p>Number of visits: <span id="visits">Placeholder for visit count</span></p>
-            </div>
+                <p>Boksburg | South Africa</p>
+                <p>Weather: 76 degrees F - Sunshine</p>
+                <p><span class="label">Page Visits: </span><span class="visits"></span></p>
         </section>
+
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28627.059473191297!2d28.26069085!3d-26.2492487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1706210290038!5m2!1sen!2sza"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </main>
 
     <footer>
@@ -84,6 +103,7 @@
 
     <!-- Link to the JavaScript file -->
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/numberVisits.js"></script>
 
 </body>
 
