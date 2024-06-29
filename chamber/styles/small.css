@@ -81,5 +81,15 @@
         /* Full width for smaller screens */
         order: unset;
         /* Reset order for single-column layout */
+
     }
+
+    .sidebar-right img:hover {
+        transform: none;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
 }
