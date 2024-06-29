@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boksburg Chamber of Commerce</title>
+    <meta name="description" content="Boksburg Chamber of Commerce | Home Page | WDD 230 Web Frontend Development">
+    <meta name="author" content="Lindiwe Mokoena">
+
+    <!-- Social Media Tags -->
+    <meta property="og:title" content="WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="This is the home page for the Chamber project.">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:image" content="https://example.com/images/boksburg.union.webp">
+    <meta property="og:site_name" content="Boksburg Chamber of Commerce">
+
+    <!-- Link to CSS Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <!-- Link for Favicon -->
+    <link rel="icon" href="favicon_io/favicon.ico">
+
+    <!-- Font Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.webp" alt="logo">
+        <h1>Boksburg Chamber of Commerce</h1>
+        <button id="hamburger" aria-label="Toggle menu">&#9776;</button> <!-- Hamburger menu button for mobile view -->
+        <button id="mode" aria-label="Toggle dark mode">🕶️</button> <!-- Dark mode button -->
+    </header>
+
+    <nav id="navMenu">
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </nav>
+
+    <h2 class="page-title">Discover Boksburg</h2>
+    <main id="sidebar">
+        <div class="sidebar-left">
+
+            <h3>Welcome!</h3>
+            <div id="visits"></div>
+
+            <div class="side-info">
+                <h3>History and Heritage</h3>
+                <br>
+                <p>Originally, Boksburg was laid out in 1887 to serve the surrounding gold mines, and named
+                    after the
+                    State Secretary of the South African Republic, Eduard Bok. The Main Reef Road linked
+                    Boksburg to all
+                    the other major mining towns on the Witwatersrand and the Angelo Hotel was used as a
+                    production
+                    post.</p>
+
+            </div>
+
+
+            <div class="side-info">
+                <h3>Population</h3>
+                <br>
+                <p>Boksburg is a large place in the region of Gauteng in South Africa with a population of
+                    approximately
+                    445,168 people and is one of the largest places in South Africa.</p>
+
+            </div>
+
+
+            <div class="side-info">
+                <h3>Attractions and Cultural Sites</h3>
+                <br>
+                <p>Discover Boksburg's captivating attractions by exploring our Theme Park (Gold Reef City), the
+                    City of
+                    Gold Mines is the largest theme amusement park and leisure entertainment center in
+                    South Africa. The city of gold mines is themed around the Witwatersrand Gold Rush. The
+                    employees in the theme park are dressed in the costumes of gold diggers from the 1880s, and the
+                    design of the park is also imitating the style of that era.
+                    <br>
+                    <br>
+                    There are many free-range peacocks strolling
+                    leisurely
+                    in the park, passing by from time to time. The theme park is surrounded by hotels,
+                    entertainment
+                    venues, restaurants, children's museums, 4D cinemas, and a journey into a gold mine. The
+                    mines of
+                    the Golden City were dug to a depth of 3,200 meters underground, and now tourists can go
+                    down to 220
+                    meters underground to see the actual operation of gold mining at that time. Also see the
+                    actual
+                    melting of gold and the process of casting gold coins.
+                </p>
+            </div>
+
+            <div class="side-info">
+                <h3>Boksburg's Botanical gardens</h3>
+                <br>
+                <p>The authenticity of material remains in the property is illustrated by the well-researched
+                    historic
+                    trees and other plantings (including historic plant specimens), historic elements of the
+                    designed
+                    spatial lay-out, and the historic buildings/structures which are being used for their
+                    original
+                    purposes or adapted to new.</p>
+            </div>
+
+            <div class="side-info">
+                <h3>Apartheid Museum</h3>
+                <br>
+                <p>TThe Apartheid Museum is a museum illustrating apartheid and the 20th-century history of
+                    South
+                    Africa. The museum, part of the Gold Reef City complex in Johannesburg, was opened in
+                    November 2001.
+                    It covers South Africa's struggle to freedom and journey to democracy.
+                </p>
+            </div>
+
+            <div class="side-info">
+                <h3>Local Cuisine and Culinary Delights</h3>
+                <br>
+                <p>This bustling city is home to some of Gauteng's most exciting and diverse dining
+                    destinations, with
+                    something to suit every taste and budget. Boksburg has everything from Italian-inspired
+                    cuisine to
+                    mouthwatering ribs, fragrant curries, and expertly grilled steaks.</p>
+            </div>
+        </div>
+
+        <div class="sidebar-right">
+            <picture>
+                <img src="images/historic-pic.webp" alt="history of boksburg" width="400" height="400"
+                    class="discover-img" loading="lazy">
+            </picture>
+            <p>Boksburg was laid out in 1887 to serve the surrounding gold mines.</p>
+            <picture>
+                <img src="images/population-pic.webp" alt="population width" width="400" height="400"
+                    class="discover-img" loading="lazy">
+            </picture>
+            <p>The population of Boksburg has come a long way, they are a diverse community and embrace
+                their
+                uniqueness.</p>
+            <picture>
+                <img src="images/goldreef.webp" alt="Theme Park" width="400" height="400" class="discover-img"
+                    loading="lazy">
+            </picture>
+            <p> Gold Mines is the largest theme amusement park and leisure entertainment center in
+                South Africa.</p>
+            <picture>
+                <img src="images/botanical.webp" alt="Boksburg's Botanical gardens" width="400" height="400"
+                    class="discover-img" loading="lazy">
+            </picture>
+            <p>The Botanical is beautiful with its lovely garden.</p>
+            <picture>
+                <img src="images/museum.webp" alt="Apartheid Museum" width="400" height="400" class="discover-img"
+                    loading="lazy">
+            </picture>
+            <p>The Apartheid Museum is a museum illustrating apartheid and the 20th-century history of South
+                Africa.
+            </p>
+            <picture>
+                <img src="images/loacal cuisine.webp" alt="Local Cuisine and Culinary Delights" width="400" height="400"
+                    class="discover-img" loading="lazy">
+            </picture>
+            <p>Boksburg has tasty food and caters to everyone.</p>
+
+        </div>
+
+    </main>
+    </div>
+
+    <footer>
+        <img class="footer-logo" src="images/logo.webp" alt="logo-footer">
+        <div class="info-footer">
+            <p>Boksburg Chamber of Commerce</p>
+            <p>5 Bulter street, Boksburg 1459, South Africa</p>
+        </div>
+        <div class="contact-footer">
+            <p>Email: contact@boksburgchamber.co.za</p>
+            <p>Phone: +27 11 625 7890</p>
+        </div>
+        <hr>
+        <hr>
+        <div class="info-author">
+            <p>&copy; <span id="yearDate"></span> Boksburg Chamber | Lindiwe C. Mokoena | WDD 230 Project | Last
+                Updated: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/getdate.js"></script>
+    <script src="scripts/getlastvisit.js"></script>
+</body>
+
+</html>

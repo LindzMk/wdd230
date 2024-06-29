@@ -299,3 +299,66 @@ body.dark-mode .card p {
     border: none;
     color: #fff;
 }
+
+/*Discovey page*/
+.page-title {
+    text-align: center;
+    padding-top: 20px;
+
+
+}
+
+#visits {
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    border: 4px solid #0f6394;
+    background-color: rgba(238, 210, 210, 0.521);
+}
+
+.side-info {
+    justify-content: center;
+    text-align: left;
+    padding: 80px;
+    border: 4px solid #0f6394;
+    margin-bottom: 1rem;
+    background-color: rgba(238, 210, 210, 0.521);
+}
+
+
+.sidebar-right img {
+    margin-bottom: 0.5rem;
+    box-shadow: 10px 10px 4px #000;
+}
+
+.sidebar-right p {
+    margin-bottom: 1.5rem;
+    margin-top: 10px;
+
+}
+
+.sidebar-left {
+    padding: 20px;
+
+}
+
+.sidebar-left p {
+    text-align: left;
+
+}
+
+.sidebar-right {
+    text-align: center;
+}
+
+.side-info h3 {
+    text-align: center;
+}
+
+.sidebar-left,
+.sidebar-right {
+    width: 100%;
+    /* Set width to 100% by default */
+}

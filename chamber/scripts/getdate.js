@@ -4,7 +4,7 @@ document.getElementById('yearDate').textContent = new Date().getFullYear();
 // Display last modified date
 document.getElementById('lastModified').textContent = document.lastModified;
 
-// menuToggle.js
+// Hamburger menu Toggle.js
 
 document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.getElementById('hamburger');
@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 })
 
+// Dark Mode Toggle
 const modeButton = document.querySelector("#mode");
 const body = document.body;
 
@@ -33,3 +34,4 @@ modeButton.addEventListener("click", () => {
         modeButton.textContent = "🕶️";
     }
 });
+

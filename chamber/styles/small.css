@@ -21,4 +21,65 @@
         flex-direction: column;
         /* Ensure menu items stack vertically */
     }
+
+    nav a {
+        font-size: 20px;
+        padding: 8px;
+        width: 100%;
+        display: block;
+    }
+
+    .navigation {
+        display: block;
+        position: relative;
+        top: auto;
+        font-size: 20px;
+    }
+
+    .hero-box {
+        flex-direction: column;
+    }
+}
+
+/* Styles for screens 480px wide or smaller */
+@media (max-width: 480px) {
+    nav a {
+        font-size: 20px;
+        padding: 6px;
+        width: 100%;
+    }
+
+    #hamburger {
+        display: block;
+        /* Show hamburger button on small screens */
+    }
+
+    .navigation {
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+
+    .call-to-action {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    /*Discover*/
+    .sidebar-left,
+    .sidebar-right {
+        width: 100%;
+        /* Full width for smaller screens */
+        order: unset;
+        /* Reset order for single-column layout */
+    }
 }
