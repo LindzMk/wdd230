@@ -1,5 +1,4 @@
-/*larger.css*/
-
+/* Styles for screens 768px wide or larger */
 @media (min-width: 768px) {
     .grid-container {
         display: grid;

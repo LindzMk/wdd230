@@ -2,6 +2,8 @@
     --primary-color: #0958a7e6;
     --font-family: 'Arial', sans-serif;
     --form-padding: 20px;
+    --border-radius: 4px;
+    /* Ensure this variable is defined */
 }
 
 main {
@@ -9,6 +11,10 @@ main {
     display: block;
     margin: auto;
     padding: 20px;
+    background-color: #fff;
+    /* Ensure background color is set */
+    color: #333;
+    /* Ensure text color is set */
 }
 
 fieldset {
@@ -16,18 +22,24 @@ fieldset {
     border-radius: var(--border-radius);
     padding: 15px;
     margin-bottom: 20px;
+    background-color: #fff;
+    /* Ensure background color is set */
+    color: #333;
+    /* Ensure text color is set */
 }
 
 legend {
     font-size: 1.2em;
     font-weight: bold;
-
+    color: #333;
+    /* Ensure text color is set */
 }
 
 label {
     display: block;
     margin-top: 1.5rem;
-
+    color: #333;
+    /* Ensure text color is set */
 }
 
 input {
@@ -39,6 +51,10 @@ input {
     border: 1px solid #ccc;
     border-radius: var(--border-radius);
     box-sizing: border-box;
+    background-color: #fff;
+    /* Ensure background color is set */
+    color: #333;
+    /* Ensure text color is set */
 }
 
 input:required {
@@ -80,57 +96,4 @@ input:required:valid {
     background-color: burlywood;
     color: var(--primary-color);
     border: solid 1px black;
-
-}
-
-@media (max-width: 600px) {
-    nav {
-        display: none;
-        flex-direction: column;
-        padding: 1rem;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    nav a {
-        display: none;
-        margin: 5px 0;
-    }
-
-    nav.open {
-        display: flex;
-    }
-
-    /* responsive menu for smaller screens */
-    /* hamburger menu */
-
-    #menu {
-        display: block;
-        font-size: 1.5rem;
-        border: 0.5px solid white;
-        padding: 0.25rem 0.75rem;
-        background-color: black;
-        color: white;
-        position: absolute;
-        top: 0;
-    }
-
-    /* open icon */
-    #menu::before {
-        content: "☰";
-    }
-
-    /* close icon */
-    #menu.open::before {
-        content: "X";
-    }
-
-    .open a {
-        display: block;
-    }
-
-    main {
-        display: block;
-    }
-
 }
