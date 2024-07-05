@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boksburg Chamber of Commerce</title>
+    <meta name="description" content="Boksburg Chamber of Commerce | Join Page | WDD 230 Web Frontend Development">
+    <meta name="author" content="Lindiwe Mokoena">
+
+    <!-- Social Media Tags -->
+    <meta property="og:title" content="WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lindzmk.github.io/wdd230/">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/LindzMk/wdd230/main/images/boksburg.union.webp">
+
+    <!-- Link to CSS Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <!-- Link for Favicon -->
+    <link rel="icon" href="favicon_io/favicon.ico">
+
+    <!-- Font Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.webp" alt="logo">
+        <h1>Boksburg Chamber of Commerce</h1>
+        <button id="hamburger" aria-label="Toggle menu">&#9776;</button> <!-- Hamburger menu button for mobile view -->
+        <button id="mode" aria-label="Toggle dark mode">🕶️</button> <!-- Dark mode button -->
+    </header>
+    <nav id="navMenu">
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </nav>
+
+    <main id="formmain">
+        <form method="get" action="thankyou.html">
+            <h2>Chamber of Commerce Application</h2>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name*<input type="text" id="fname" name="fname" required></label>
+                <label>Last Name*<input type="text" id="lname" name="lname" required></label>
+                <label>Title or Position*<input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}$"
+                        placeholder="Minimum 7 characters" required></label>
+                <label>Email*<input type="email" id="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label>Phone Number*<input type="tel" id="phone" name="phone" required></label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Businnes Information</legend>
+                <label>Businnes/Organization's Name*<input type="text" id="bname" name="bname" required></label>
+                <label for="bdescription">Businnes/Organization's Description</label>
+                <textarea id="bdescription" name="bdescription" rows="4" cols="50"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Levels</legend>
+                <label><input type="radio" name="membershiplevel" value="Non-Profit Membership">Non-Profit
+                    Membership</label>
+                <label><input type="radio" name="membershiplevel" value="Bronze Membership">Bronze
+                    Membership</label>
+                <label><input type="radio" name="membershiplevel" value="Silver Membership">Silver
+                    Membership</label>
+                <label><input type="radio" name="membershiplevel" value="Gold Membership">Gold Membership</label>
+            </fieldset>
+            <input type="hidden" id="datetime" name="datetime" value="">
+            <input type="submit" id="sbutton" name="sbutton" value="Join Community">
+        </form>
+
+        <div class="membershipBenefits<">
+            <br>
+            <h2>Membership Benefits</h2>
+
+            <div id="Non-Profit">
+                <h3>Non-Profit Membership</h3>
+                <br>
+                <ul>
+                    <li>Connect with like-minded organizations and amplify your impact in the community.</li>
+                    <li>Gain visibility through our Chamber events and promotional channels.</li>
+                    <li>Access valuable networking opportunities to build strategic partnerships.</li>
+                    <li>Connect with other non-profit organizations to collaborate on community initiatives and create a
+                        greater impact together.</li>
+
+                </ul>
+            </div>
+
+            <div id="Bronze_Membership_Benefits">
+                <br>
+                <h3>Bronze (R80.00 a month)</h3>
+                <br>
+                <ul>
+                    <li>Enjoy all the benefits of the Non-Profit membership, plus:</li>
+                    <li>Listing in our online business directory, increasing your online presence.</li>
+                    <li>Exclusive invitations to educational seminars and workshops to enhance your business skills.
+                    </li>
+                    <li>Promote your business through our social media platforms, reaching a wider audience and
+                        increasing brand visibility.</li>
+                    <li>Attend monthly networking events and make valuable connections with fellow entrepreneurs and
+                    </li>
+                </ul>
+
+            </div>
+
+            <div id="Silver_Membership_Benefits">
+                <br>
+                <h3>Silver (R120.00 a month)</h3>
+                <br>
+                <ul>
+                    <li>Enjoy all the advantages of the Bronze membership, plus:</li>
+                    <li>Spotlight your business with enhanced visibility in our directory and on our website.</li>
+                    <li>Participate in our prestigious Chamber committees and influence local policies.</li>
+                    <li>Showcase your expertise as a guest speaker at Chamber events, positioning yourself as a thought
+                        leader in your industry.</li>
+                    <li>Receive priority access to sponsorship opportunities for Chamber programs and events, elevating
+                        your brand's recognition.</li>
+
+                </ul>
+            </div>
+
+            <div id="Gold_Membership_Benefits">
+                <br>
+                <h3>Gold (R200.00 a month)</h3>
+                <br>
+                <ul>
+                    <li>Experience the ultimate membership package, incorporating all other membership level benefits,
+                        plus:</li>
+                    <li>Premier recognition as a Chamber supporter at our signature events.</li>
+                    <li>VIP access to exclusive networking receptions and business showcases.</li>
+                    <li>Enjoy prominent logo placement on our Chamber's website and event materials, maximizing your
+                        brand's visibility.</li>
+                    <li>Gain exclusive access to high-level networking events, connecting with influential community
+                        leaders and decision-makers.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img class="footer-logo" src="images/logo.webp" alt="logo-footer">
+        <div class="info-footer">
+            <p>Boksburg Chamber of Commerce</p>
+            <p>5 Bulter street, Boksburg 1459, South Africa</p>
+        </div>
+        <div class="contact-footer">
+            <p>Email: contact@boksburgchamber.co.za</p>
+            <p>Phone: +27 11 625 7890</p>
+        </div>
+        <hr>
+        <hr>
+        <div class="info-author">
+            <p>&copy; <span id="yearDate"></span> Boksburg Chamber | Lindiwe C. Mokoena | WDD 230 Project | Last
+                Updated: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/getdate.js"></script>
+    <script src="scripts/responsiveMenu.js"></script>
+</body>
+
+</html>
