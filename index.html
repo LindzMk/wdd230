@@ -67,7 +67,8 @@
         <section class="grid-container">
             <div class="card learning-activities">
                 <h2>Learning Activities</h2>
-                <ul>
+                <!--<ul>
+                
                     <li>Week 01: <a href="week01/holygrail.html">Holy Layout</a> | <a
                             href="week01/media-query.html">Media Query</a></li>
                     <li>Week 02: <a href="week02/design.html">Design</a> | <a
@@ -88,13 +89,20 @@
                     </li>
                     <li><a href="activity6.html">Week 06</a></li>
                     <li><a href="activity7.html">Week 07</a></li>
-                </ul>
+                  </ul>-->
             </div>
+            <div id="links"></div>
 
             <div class="card information">
                 <h2>Information</h2>
                 <p>Boksburg | South Africa</p>
-                <p>Weather: 76 degrees F - Sunshine</p>
+                <br>
+                <p>Weather: <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <br>
                 <p><span class="label">Page Visits: </span><span class="visits"></span></p>
             </div>
         </section>
@@ -116,6 +124,8 @@
     <!-- Link to the JavaScript file -->
     <script src="scripts/getDates.js"></script>
     <script src="scripts/numberVisits.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="links.js" defer></script>
 
 </body>
 
