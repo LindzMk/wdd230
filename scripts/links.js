@@ -8,7 +8,6 @@ const getLinks = async () => {
         const response = await fetch(linksURL);
         const data = await response.json();
         console.log(data);  // Test the JSON result
-        displayLinks(data.weeks);
     } catch (error) {
         console.error("Error fetching data: ", error);
     }
