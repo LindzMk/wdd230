@@ -1,10 +1,17 @@
 const baseURL = "https://lindzmk.github.io/wdd230/";
-const linksURL = "https://lindzmk.github.io/wdd230/data/links.json";
+const linksURL = `${baseURL}data/links.json`;
 
 async function getLinks() {
-    const response = await fetch(linksURL);
-    const data = await response.json();
-    displayLinks(data);
+    try {
+        const response = await fetch(linksURL);
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        const data = await response.json();
+        displayLinks(data);
+    } catch (error) {
+        console.error('There has been a problem with your fetch operation:', error);
+    }
 }
 
 function displayLinks(weeks) {
@@ -19,7 +26,7 @@ function displayLinks(weeks) {
         week.links.forEach(link => {
             const listItem = document.createElement("li");
             const anchor = document.createElement("a");
-            anchor.href = link.url;
+            anchor.href = link.url.startsWith('http') ? link.url : `${baseURL}${link.url}`;
             anchor.textContent = link.title;
 
             listItem.appendChild(anchor);
@@ -31,4 +38,6 @@ function displayLinks(weeks) {
     });
 }
 
-getLinks();
+document.addEventListener('DOMContentLoaded', () => {
+    getLinks();
+});
