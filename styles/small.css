@@ -39,6 +39,16 @@
     .hero-box {
         flex-direction: column;
     }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+
+        .learning-activities,
+        .information {
+            grid-column: auto;
+            grid-row: auto;
+        }
+    }
 }
 
 /* Styles for screens 480px wide or smaller */
@@ -72,5 +82,15 @@
 
     h1 {
         font-size: 30px;
+    }
+
+    grid-container {
+        grid-template-columns: 1fr;
+
+        .learning-activities,
+        .information {
+            grid-column: auto;
+            grid-row: auto;
+        }
     }
 }
