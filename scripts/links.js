@@ -17,27 +17,37 @@ async function getLinks() {
 function displayLinks(weeks) {
     const learningActivities = document.getElementById("learningActivities");
 
+
     weeks.weeks.forEach(week => {
-        const weekTitle = document.createElement("h3");
-        weekTitle.textContent = week.week;
+        const weekContainer = document.createElement("div");
+        weekContainer.classList.add("week");
 
-        const linksList = document.createElement("ul");
+        const weekText = document.createElement("p");
+        weekText.textContent = `${week.week}: `;
 
-        week.links.forEach(link => {
-            const listItem = document.createElement("li");
+        week.links.forEach((link, index) => {
             const anchor = document.createElement("a");
             anchor.href = link.url.startsWith('http') ? link.url : `${baseURL}${link.url}`;
             anchor.textContent = link.title;
 
-            listItem.appendChild(anchor);
-            linksList.appendChild(listItem);
+            weekText.appendChild(anchor);
+            if (index < week.links.length - 1) {
+                weekText.appendChild(document.createTextNode(' | '));
+            }
         });
 
-        learningActivities.appendChild(weekTitle);
-        learningActivities.appendChild(linksList);
+        weekContainer.appendChild(weekText);
+        learningActivities.appendChild(weekContainer);
     });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     getLinks();
 });
+
+
+
+
+
+
+

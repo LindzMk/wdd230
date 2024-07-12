@@ -195,6 +195,21 @@ main h1 {
 .grid-container {
     display: grid;
     gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.learning-activities {
+    grid-column: 1 / 2;
+    /* Start at column 1 */
+    grid-row: 1;
+    /* Align in the first row */
+}
+
+.information {
+    grid-column: 2 / 3;
+    /* Start at column 2 */
+    grid-row: 1;
+    /* Align in the first row */
 }
 
 /* Card */
