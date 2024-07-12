@@ -1,38 +1,34 @@
 const baseURL = "https://lindzmk.github.io/wdd230/";
 const linksURL = "https://lindzmk.github.io/wdd230/data/links.json";
 
-const links = document.querySelector('#links');
+async function getLinks() {
+    const response = await fetch(linksURL);
+    const data = await response.json();
+    displayLinks(data);
+}
 
-const getLinks = async () => {
-    try {
-        const response = await fetch(linksURL);
-        const data = await response.json();
-        displayLinks(data);
-    } catch (error) {
-        console.error("Error fetching data: ", error);
-    }
-};
+function displayLinks(weeks) {
+    const learningActivities = document.getElementById("learningActivities");
 
-const displayLinks = (weeks) => {
-    weeks.lessons.forEach((lesson) => {
+    weeks.weeks.forEach(week => {
+        const weekTitle = document.createElement("h3");
+        weekTitle.textContent = week.week;
 
-        let weekTitle = document.createElement('h4');
-        weekTitle.textContent = `Week ${lesson.lesson}`;
-        links.appendChild(weekTitle);
+        const linksList = document.createElement("ul");
 
-        lesson.links.forEach((link, index) => {
-            let linkURL = document.createElement('a');
-            linkURL.textContent = link.title;
-            linkURL.href = link.url;
-            links.appendChild(linkURL);
+        week.links.forEach(link => {
+            const listItem = document.createElement("li");
+            const anchor = document.createElement("a");
+            anchor.href = link.url;
+            anchor.textContent = link.title;
 
-
-            if (index < lesson.links.length - 1) {
-                let separator = document.createTextNode(" | ");
-                links.appendChild(separator);
-            }
+            listItem.appendChild(anchor);
+            linksList.appendChild(listItem);
         });
-    })
-};
+
+        learningActivities.appendChild(weekTitle);
+        learningActivities.appendChild(linksList);
+    });
+}
 
 getLinks();
