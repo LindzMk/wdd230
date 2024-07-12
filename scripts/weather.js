@@ -27,9 +27,22 @@ apiFetch();
 // Build the displayResults function to output to the given HTML document
 function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg; F`;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = `${desc}`;
+
+    // Check if weather data and icon URL are available
+    if (data.weather && data.weather.length > 0) {
+        const iconCode = data.weather[0].icon;
+        const iconsrc = `https://openweathermap.org/img/w/${iconCode}.png`;
+        const desc = data.weather[0].description;
+
+        // Check if iconsrc is not empty
+        if (iconCode && iconsrc) {
+            weatherIcon.setAttribute('src', iconsrc);
+            weatherIcon.setAttribute('alt', desc);
+            captionDesc.textContent = desc;
+        } else {
+            console.error('Weather icon URL is empty or undefined');
+        }
+    } else {
+        console.error('Weather data is incomplete or missing');
+    }
 }
