@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Papachinos",
+            "address": "261 Kingfisher Ave, Boksburg, 1459",
+            "phone": "+27 913 2505",
+            "weburl": "https://www.papachinos.co.za/",
+            "image": "https://raw.githubusercontent.com/mokoenal/wdd230/master/chamber/images/pappinos.webp",
+            "membershiplevel": "Gold"
+        },
+        {
+            "name": "Apartheid Museum",
+            "address": "Northen Parkway & Gold Reeg Road, Ormonde, 2001",
+            "phone": " +27 (0)11 309 4700",
+            "weburl": "https://www.apartheidmuseum.org/",
+            "image": "https://raw.githubusercontent.com/mokoenal/wdd230/master/chamber/images/Museumnew.webp",
+            "membershiplevel": "Silver"
+        },
+        {
+            "name": "Virgin Active",
+            "address": "Shop 13 East Rand Retail Park, N Rand Rd, Boksburg, 1459 ",
+            "phone": "+27 894 1818",
+            "weburl": "https://www.virginactive.co.za/",
+            "image": "https://raw.githubusercontent.com/mokoenal/wdd230/master/chamber/images/virgin.webp",
+            "membershiplevel": "Broze"
+        },
+        {
+            "name": "Joburg City Parks & Zoo",
+            "address": "City Parks House, 40 De Korte Street, Braamfontein, 2000",
+            "phone": "+27 646 2000",
+            "weburl": "https://www.jhbcityparksandzoo.com/",
+            "image": "https://raw.githubusercontent.com/mokoenal/wdd230/master/chamber/images/park.webp",
+            "membershiplevel": "Gold"
+        },
+        {
+            "name": "Superior Car Clinic",
+            "address": "84 Andries Pretorius Rd, Edenvale, Johannesburg, 1609",
+            "phone": "+27 051 7918",
+            "weburl": "https://superiorcarclinic.co.za/",
+            "image": "https://raw.githubusercontent.com/mokoenal/wdd230/master/chamber/images/car%20clinic.webp",
+            "membershiplevel": "Silver"
+        },
+        {
+            "name": "Serenity Art Studios",
+            "address": "11 Cope street, Parkrand, Boksburg, 1459",
+            "phone": "+27 82 489 8711",
+            "weburl": "https://www.serenitiesartstudio.co.za/",
+            "image": "https://raw.githubusercontent.com/mokoenal/wdd230/master/chamber/images/Serenity.webp",
+            "membershiplevel": "Broze"
+        },
+        {
+            "name": "Puma Transport",
+            "address": "24 Dr Vosloo Road, Bartlett, Boksburg, 1459",
+            "phone": "+27 894 4040",
+            "weburl": "https://pumatransport.co.za/",
+            "image": "https://raw.githubusercontent.com/mokoenal/wdd230/master/chamber/images/Puma-New.webp",
+            "membershiplevel": "Gold"
+        }
+    ]
+}
