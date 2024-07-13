@@ -9,9 +9,9 @@
     <meta name="author" content="Lindiwe Mokoena">
 
     <!-- Social Media Tags -->
-    <meta property="og:title" content="Discover page">
+    <meta property="og:title" content="Directory page">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="This is the Discover page for the Chamber project.">
+    <meta property="og:description" content="This is the Directory page for the Chamber project.">
     <meta property="og:url" content="https://lindzmk.github.io/wdd230/">
     <meta property="og:image"
         content="https://raw.githubusercontent.com/LindzMk/wdd230/main/images/boksburg.union.webp">
@@ -50,8 +50,15 @@
         </nav>
     </nav>
 
-    <h2 class="page-title">Discover Boksburg</h2>
-
+    <h2 class="page-title">Directory</h2>
+    <main>
+        <div class="menu">
+            <button id="grid">⏹️ Grid</button>
+            <button id="list">📄</button>
+        </div>
+        <hr>
+        <article class="grid" id="member-container"></article>
+    </main>
 
 
 
@@ -75,6 +82,7 @@
     <script src="scripts/getdate.js"></script>
     <script src="scripts/getlastvisit.js"></script>
     <script src="scripts/responsiveMenu.js"></script>
+    <script src="scripts/members.js"></script>
 </body>
 
 </html>
