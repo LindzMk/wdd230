@@ -14,7 +14,7 @@ async function getMembersInfo(url) {
 function displayInfo(members) {
     memberContainer.innerHTML = ""; // Clear previous content
 
-    members.forEach((member, index) => {
+    members.forEach((member) => {
         const card = document.createElement("section");
         const name = document.createElement("h3");
         const address = document.createElement("p");
@@ -47,15 +47,6 @@ function displayInfo(members) {
         card.appendChild(weburl);
         card.appendChild(membLvl);
 
-        // Display first 4 companies inline, rest in grid or list format
-        if (index < 4 && memberContainer.classList.contains("grid")) {
-            card.style.display = "inline-block";
-            card.style.width = "calc(25% - 20px)";
-            card.style.verticalAlign = "top";
-            card.style.margin = "0 10px 10px 0";
-            card.style.textAlign = "center";
-        }
-
         memberContainer.appendChild(card);
     });
 }
@@ -73,3 +64,15 @@ document.querySelector("#list").addEventListener("click", () => {
 });
 
 getMembersInfo(baseURL);
+
+
+
+
+
+
+
+
+
+
+
+

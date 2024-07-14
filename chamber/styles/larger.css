@@ -26,4 +26,7 @@
         /* Hide hamburger button on larger screens */
     }
 
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
