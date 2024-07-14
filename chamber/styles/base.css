@@ -509,8 +509,16 @@ li {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
-    background-color: #bed;
+    background-color: #bd581d83;
     text-align: center;
+}
+
+.menu-container {
+    background-color: #bd581d83;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .menu button {
@@ -527,7 +535,6 @@ li {
     max-width: 100%;
     grid-gap: 20px;
     align-items: center;
-
     align-items: stretch;
 }
 
@@ -572,6 +579,9 @@ li {
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    margin: 0 auto;
+    align-items: stretch;
+
 }
 
 
@@ -580,9 +590,9 @@ li {
     justify-content: space-between;
     align-items: center;
     border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
     background-color: #e9d0d096;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -594,14 +604,14 @@ li {
 .list section img {
 
     max-width: 100px;
-    height: 100%;
+    height: auto;
     border-radius: 5px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .list section h3 {
     flex: 1;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
 }
@@ -614,11 +624,12 @@ li {
     flex: 1;
     margin: 0;
     font-size: 0.9rem;
+
 }
 
 .list section a {
     font-weight: bold;
-    color: #3052ecda;
+    color: #1940ebe1;
     text-decoration: none;
 }
 

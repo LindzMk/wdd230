@@ -2,7 +2,7 @@
     "members": [
         {
             "name": "Papachinos",
-            "address": "Address: 261 Kingfisher Ave, Boksburg, 1459",
+            "address": "261 Kingfisher Ave, Boksburg, 1459",
             "phone": "+27 913 2505",
             "weburl": "https://www.papachinos.co.za/",
             "image": "https://raw.githubusercontent.com/LindzMk/wdd230/main/chamber/images/pappachinos.webp",
@@ -10,7 +10,7 @@
         },
         {
             "name": "Apartheid Museum",
-            "address": "Address: Northen Parkway & Gold Reeg Road, Ormonde, 2001",
+            "address": "Northen Parkway & Gold Reeg Road, Ormonde, 2001",
             "phone": " +27 (0)11 309 4700",
             "weburl": "https://www.apartheidmuseum.org/",
             "image": "https://raw.githubusercontent.com/LindzMk/wdd230/main/chamber/images/Museumnew.webp",
@@ -18,7 +18,7 @@
         },
         {
             "name": "Virgin Active",
-            "address": "Address: Shop 13 East Rand Retail Park, N Rand Rd, Boksburg, 1459 ",
+            "address": "Shop 13 East Rand Retail Park, N Rand Rd, Boksburg, 1459 ",
             "phone": "+27 894 1818",
             "weburl": "https://www.virginactive.co.za/",
             "image": "https://raw.githubusercontent.com/LindzMk/wdd230/main/chamber/images/virgin.webp",
@@ -26,7 +26,7 @@
         },
         {
             "name": "Joburg City Parks & Zoo",
-            "address": "Address: City Parks House, 40 De Korte Street, Braamfontein, 2000",
+            "address": "City Parks House, 40 De Korte Street, Braamfontein, 2000",
             "phone": "+27 646 2000",
             "weburl": "https://www.jhbcityparksandzoo.com/",
             "image": "https://raw.githubusercontent.com/LindzMk/wdd230/main/chamber/images/park.webp",
@@ -34,7 +34,7 @@
         },
         {
             "name": "Superior Car Clinic",
-            "address": "Address: 84 Andries Pretorius Rd, Edenvale, Johannesburg, 1609",
+            "address": "84 Andries Pretorius Rd, Edenvale, Johannesburg, 1609",
             "phone": "+27 051 7918",
             "weburl": "https://superiorcarclinic.co.za/",
             "image": "https://raw.githubusercontent.com/LindzMk/wdd230/main/chamber/images/car%20clinic.webp",
@@ -42,7 +42,7 @@
         },
         {
             "name": "Serenity Art Studios",
-            "address": "Address: 11 Cope street, Parkrand, Boksburg, 1459",
+            "address": "11 Cope street, Parkrand, Boksburg, 1459",
             "phone": "+27 82 489 8711",
             "weburl": "https://www.serenitiesartstudio.co.za/",
             "image": "https://raw.githubusercontent.com/LindzMk/wdd230/main/chamber/images/Serenity.webp",
@@ -50,7 +50,7 @@
         },
         {
             "name": "Puma Transport",
-            "address": "Address: 24 Dr Vosloo Road, Bartlett, Boksburg, 1459",
+            "address": "24 Dr Vosloo Road, Bartlett, Boksburg, 1459",
             "phone": "+27 894 4040",
             "weburl": "https://pumatransport.co.za/",
             "image": "https://raw.githubusercontent.com/LindzMk/wdd230/main/chamber/images/Puma-New.webp",
