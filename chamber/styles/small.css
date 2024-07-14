@@ -44,6 +44,10 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .list section {
+        flex-direction: column;
+    }
+
     /* Styles for screens 480px wide or smaller */
     @media (max-width: 480px) {
         nav a {
@@ -109,6 +113,11 @@
             margin-right: 0;
             margin-bottom: 10px;
             display: none;
+        }
+
+
+        .list section>* {
+            margin: 0.5rem 0;
         }
     }
 
