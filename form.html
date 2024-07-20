@@ -55,7 +55,7 @@
     <main>
         <h2>Registration Form</h2>
         <div id="formmessage"></div>
-        <form method="get" action="record.html">
+        <form id="registrationForm" method="get" action="record.html">
             <fieldset>
                 <legend>Information</legend>
 
@@ -67,9 +67,10 @@
 
                 <label>Confirm Password* <input type="password" id="password2" name="password2" required></label>
                 <label>Email*<input type="email" id="email" name="email" placeholder="someone@byui.edu"
-                        title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+                        title="Please enter a valid byui.edu email address." pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                        required></label>
 
-                <label for="r">Page Raiting</label>
+                <label for="r">Page Rating</label>
                 <div id="rangevalue">0</div>
                 <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
                 <datalist id="rangevalues">
@@ -100,6 +101,7 @@
     <!-- Link to the JavaScript file -->
     <script src="scripts/getDates.js"></script>
     <script src="scripts/numberVisits.js"></script>
+    <script src="scripts/passWord.js"></script>
 
 </body>
 

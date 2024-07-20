@@ -169,7 +169,7 @@ main {
 
 .event {
     display: block;
-    margin: 0 auto;
+    margin-bottom: 0 auto;
     /* center the image horizontally */
     box-sizing: content-box;
     padding-top: 20px;
@@ -263,6 +263,7 @@ body.dark-mode header {
 
 body.dark-mode nav {
     background-color: #222;
+
 }
 
 body.dark-mode nav a {
@@ -651,4 +652,98 @@ li {
 
 .list section a:hover {
     text-decoration: underline;
+}
+
+/*Chamber enhancement*/
+.weather {
+    text-align: center;
+    text-underline-position: below;
+}
+
+.weather img.weather {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #e9d0d096;
+
+    .weather-details {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .weather-details p {
+        margin: 5px 0;
+    }
+
+    .weather-details figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #forecast {
+        margin-top: 20px;
+    }
+
+    .forecast-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .forecast-item img {
+        vertical-align: middle;
+    }
+
+    /*Spotlight*/
+    #spotlight-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .spotlight-member {
+        flex: 0 1 30%;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .spotlight-member img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .spotlight-member h3 {
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+
+    .spotlight-member p,
+    .spotlight-member a {
+        font-size: 1em;
+        margin: 5px 0;
+    }
+
+    #spotlight-section {
+        margin: 0;
+        padding-top: 100px;
+        border: none;
+    }
+
 }
