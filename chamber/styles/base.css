@@ -16,6 +16,7 @@ body {
     margin: auto;
     max-width: 1000px;
 
+
 }
 
 #mode {
@@ -167,7 +168,7 @@ main {
 }
 
 
-.event {
+.boksburg {
     display: block;
     margin-bottom: 0 auto;
     /* center the image horizontally */
@@ -175,6 +176,9 @@ main {
     padding-top: 20px;
     padding-bottom: 20px;
     display: block;
+
+
+
 }
 
 .weather {
@@ -185,6 +189,12 @@ main {
     padding-top: 20px;
     padding-bottom: 20px;
     display: block;
+    font-size: 15px;
+
+}
+
+h3 {
+    font-size: 20px;
 
 }
 
