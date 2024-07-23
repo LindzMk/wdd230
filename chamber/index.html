@@ -7,36 +7,40 @@
     <title>Boksburg Chamber of Commerce</title>
     <meta name="description" content="Boksburg Chamber of Commerce | Home Page | WDD 230 Web Frontend Development">
     <meta name="author" content="Lindiwe Mokoena">
-
-    <!-- Social Media Tags -->
     <meta property="og:title" content="WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lindzmk.github.io/wdd230/">
     <meta property="og:image"
         content="https://raw.githubusercontent.com/LindzMk/wdd230/main/images/boksburg.union.webp">
 
-    <!-- Link to CSS Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/small.css">
-
-    <!-- Link for Favicon -->
     <link rel="icon" href="favicon_io/favicon.ico">
-
-    <!-- Font Links -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Permanent+Marker&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <header>
         <img class="logo" src="images/logo.webp" alt="logo">
         <h1>Boksburg Chamber of Commerce</h1>
-        <button id="hamburger" aria-label="Toggle menu">&#9776;</button>
-        <button id="mode" aria-label="Toggle dark mode">🕶️</button>
+        <div class="header-icons">
+            <button id="hamburger" aria-label="Toggle menu">&#9776;</button>
+            <button id="mode" aria-label="Toggle dark mode">🕶️</button>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/boksburgchamber" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/boksburgchamber" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/boksburgchamber" target="_blank" aria-label="Twitter"><i
+                        class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </header>
     <nav id="navMenu">
         <nav class="navigation">
@@ -50,26 +54,45 @@
         <img id="hero-img" src="images/hero_image3.jpg" alt="hero image">
         <button class="call-to-action">Join the Chamber</button>
     </div>
+    <div id="event-banner" class="banner hidden">
+        <p class="banner-message">Join us for a meet and greet event this Wednesday at 7:00 p.m. <button
+                id="close-banner">❌</button></p>
+    </div>
     <main>
         <section class="boksburg">
-            <h3>The Greater Boksburg Chamber of Commerce and Industry</h3>
+            <h3>The Boksburg Chamber of Commerce</h3>
             <br>
-            <p>
-                The Greater Boksburg Chamber of Commerce and Industry (GBCCI) is a non-profit organisation serving
-                businesses and the community in the Greater Boksburg area which forms part of the Ekurhuleni
-                Metropolitan Municipality (EMM). Our aim is to promote local socio-economic growth and development.
+            <p>The Boksburg Chamber of Commerce (BK) is a non-profit organisation serving businesses and the community
+                in the Boksburg area which forms part of the Ekurhuleni Metropolitan Municipality (EMM).
                 <br>
                 <br>
-                To achieve this we are constantly looking for ways to create opportunities for businesses and the
-                community to grow and prosper. We are proud of our track record of supporting entrepreneurs, local
-                businesses and the community at large.
+                Our aim is to promote local socio-economic growth and development. To achieve this we are constantly
+                looking for ways to create opportunities for businesses and the community to grow and prosper. We are
+                proud of our track record of supporting entrepreneurs, local businesses and the community at large.
                 <br>
                 <br>
+                As the Boksburg Chamber of Commerce we assist Business and Entrepreneurs in developing skills to:
+                <br>
+                <br>
+                • Promote business; provide information and advice as well as develop Boksburg's community and
+                businesses to their full potential.
+                <br>
+                <br>
+                • Give fair representation at Local, Provincial and National Government level.
+                <br>
+                <br>
+                • Attempt to influence policy making for the good of Boksburg's community and businesses and help
+                businesses grow through communication and social involvement and responsibility.
             </p>
-            <img class="event" src="images/event1.webp" alt="events">
+
+            <section id="spotlight">
+                <h2>Member Spotlights</h2>
+                <div id="spotlight-container"></div>
+            </section>
         </section>
         <section class="weather">
             <h3>Weather</h3>
+            <br>
             <p>Boksburg | South Africa</p>
             <div class="weather-container">
                 <div class="weather-details">
@@ -83,12 +106,9 @@
                 <div id="forecast">
                     <h3>3-Day Forecast</h3>
                 </div>
-                <br>
                 <p><span class="label">Page Visits: </span><span class="visits"></span></p>
-
             </div>
         </section>
-
     </main>
     <footer>
         <img class="footer-logo" src="images/logo.webp" alt="logo-footer">

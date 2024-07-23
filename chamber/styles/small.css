@@ -48,77 +48,96 @@
         flex-direction: column;
     }
 
-    /* Styles for screens 480px wide or smaller */
-    @media (max-width: 480px) {
-        nav a {
-            font-size: 20px;
-            padding: 6px;
-            width: 100%;
-        }
-
-        #hamburger {
-            display: block;
-            /* Show hamburger button on small screens */
-        }
-
-        .navigation {
-            padding: 5px 10px;
-            font-size: 20px;
-        }
-
-        .call-to-action {
-            font-size: 20px;
-            padding: 15px;
-        }
-
-        header {
-            flex-direction: column;
-            align-items: center;
-            padding: 5px 10px;
-        }
-
-        h1 {
-            font-size: 30px;
-        }
-
-        /*Discover*/
-        .sidebar-left,
-        .sidebar-right {
-            width: 100%;
-            /* Full width for smaller screens */
-            order: unset;
-            /* Reset order for single-column layout */
-
-        }
-
-        .sidebar-right img:hover {
-            transform: none;
-        }
-
-        main {
-            grid-template-columns: 1fr;
-        }
-
-        .grid {
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 10px;
-        }
-
-        .list section {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .list section img {
-            margin-right: 0;
-            margin-bottom: 10px;
-            display: none;
-        }
-
-
-        .list section>* {
-            margin: 0.5rem 0;
-        }
+    .spotlight-member {
+        flex: 0 1 45%;
     }
 
+    .spotlight-member img {
+        width: 100px;
+        /* Smaller width for smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .spotlight-member {
+        flex: 0 1 100%;
+    }
+
+    .spotlight-member img {
+        width: 80px;
+        /* Even smaller width for very small screens */
+    }
+}
+
+/* Styles for screens 480px wide or smaller */
+@media (max-width: 480px) {
+    nav a {
+        font-size: 20px;
+        padding: 6px;
+        width: 100%;
+    }
+
+    #hamburger {
+        display: block;
+        /* Show hamburger button on small screens */
+    }
+
+    .navigation {
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+
+    .call-to-action {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    /*Discover*/
+    .sidebar-left,
+    .sidebar-right {
+        width: 100%;
+        /* Full width for smaller screens */
+        order: unset;
+        /* Reset order for single-column layout */
+
+    }
+
+    .sidebar-right img:hover {
+        transform: none;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+
+    .list section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list section img {
+        margin-right: 0;
+        margin-bottom: 10px;
+        display: none;
+    }
+
+
+    .list section>* {
+        margin: 0.5rem 0;
+    }
 }

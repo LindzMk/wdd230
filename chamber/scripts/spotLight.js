@@ -1,48 +1,35 @@
-const baseURL = "https://lindzmk.github.io/wdd230/";
-const membersURL = `${baseURL}data/members.json`;
+document.addEventListener('DOMContentLoaded', () => {
+    const jsonUrl = 'data/members.json';
 
-// Function to get random spotlight members
-function getRandomSpotlightMembers(members, count = 3) {
-    const qualifiedMembers = members.filter(member => member.membershiplevel === 'Gold' || member.membershiplevel === 'Silver');
-    const shuffled = qualifiedMembers.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, count);
-}
+    fetch(jsonUrl)
+        .then(response => response.json())
+        .then(data => {
+            const goldSilverMembers = data.members.filter(member =>
+                member.membershiplevel === 'Gold' || member.membershiplevel === 'Silver'
+            );
 
-// Function to create spotlight HTML
-function createSpotlightMember(member) {
-    return `
-        <div class="spotlight-member">
-            <img src="${member.image}" alt="${member.name}">
-            <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>Phone: ${member.phone}</p>
-            <a href="${member.weburl}" target="_blank">Visit Website</a>
-        </div>
-    `;
-}
+            const spotlightMembers = [];
+            while (spotlightMembers.length < 3 && goldSilverMembers.length > 0) {
+                const randomIndex = Math.floor(Math.random() * goldSilverMembers.length);
+                spotlightMembers.push(goldSilverMembers.splice(randomIndex, 1)[0]);
+            }
 
-// Function to display spotlight members
-function displaySpotlights(data) {
-    const spotlightContainer = document.getElementById('spotlight-container');
-    spotlightContainer.innerHTML = '';
+            const spotlightContainer = document.getElementById('spotlight-container');
+            spotlightMembers.forEach(member => {
+                const memberCard = document.createElement('div');
+                memberCard.classList.add('member-card');
 
-    const spotlightMembers = getRandomSpotlightMembers(data.members);
+                memberCard.innerHTML = `
+                    <img src="${member.image}" alt="${member.name}">
+                    <h3>${member.name}</h3>
+                    <p>${member.address}</p>
+                    <p>${member.phone}</p>
+                    <a href="${member.weburl}" target="_blank">Visit Website</a>
+                `;
 
-    spotlightMembers.forEach(member => {
-        spotlightContainer.innerHTML += createSpotlightMember(member);
-    });
-}
-
-// Function to fetch and display data
-async function fetchAndDisplaySpotlights() {
-    try {
-        const response = await fetch(membersURL);
-        if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
-        }
-        const data = await response.json();
-        displaySpotlights(data);
-    } catch (error) {
-        console.error('There has been a problem with your fetch operation:', error);
-    }
-}
+                spotlightContainer.appendChild(memberCard);
+            });
+        })
+        .catch(error => console.error('Error fetching or parsing data:', error));
+});
+``
