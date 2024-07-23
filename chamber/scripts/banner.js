@@ -1,13 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const bannerContainer = document.getElementById('event-banner');
-    const closeBannerButton = document.getElementById('close-banner');
-    const today = new Date().getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+document.addEventListener('DOMContentLoaded', function () {
+    const banner = document.getElementById('event-banner');
+    const closeButton = document.getElementById('close-banner');
 
-    if (today === 1 || today === 2 || today === 3) {
-        bannerContainer.classList.remove('hidden');
+    function checkDay() {
+        const today = new Date().getDay();
+        // 1 = Monday, 2 = Tuesday, 3 = Wednesday
+        if (today === 1 || today === 2 || today === 3) {
+            banner.classList.remove('hidden');
+        } else {
+            banner.classList.add('hidden');
+        }
     }
 
-    closeBannerButton.addEventListener('click', () => {
-        bannerContainer.classList.add('hidden');
+    closeButton.addEventListener('click', function () {
+        banner.classList.add('hidden');
     });
+
+    // Check day when the page loads
+    checkDay();
 });

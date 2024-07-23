@@ -189,12 +189,6 @@ main {
 }
 
 
-.boksburg {
-    margin-bottom: 20px;
-}
-
-
-
 .weather {
     display: block;
     margin: 0 auto;
@@ -536,6 +530,7 @@ li {
     padding: 0.5rem;
     background-color: #bd581d83;
     text-align: center;
+
 }
 
 .menu-container {
@@ -556,7 +551,7 @@ li {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     max-width: 100%;
     grid-gap: 20px;
     align-items: center;
@@ -771,11 +766,11 @@ li {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
+
 }
 
 .spotlight-member {
     flex: 0 1 30%;
-    border: 1px solid #940c0c;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
@@ -786,8 +781,6 @@ li {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    border: 4px solid #0f6394;
-    background-color: #c22460;
 
 }
 
@@ -803,7 +796,8 @@ li {
 }
 
 .member-card {
-    border: 1px solid #cccccc7c;
+    border: 4px solid #0f6394;
+    background-color: rgba(238, 210, 210, 0.521);
     padding: 10px;
     margin: 10px;
     text-align: center;
